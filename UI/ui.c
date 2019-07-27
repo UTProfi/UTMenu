@@ -10,7 +10,7 @@ Canvas canvas2;
 Font fontRegular;
 Font fontBold;
 
-//Кнопки
+//РљРЅРѕРїРєРё
 Boolpin btnPrev;
 Boolpin btnNext;
 Boolpin btnBack;
@@ -18,7 +18,7 @@ Boolpin btnFunc;
 
 MenuWindow menuWindow;
 
-//Инициализация пользовательского интерфейса
+//РРЅРёС†РёР°Р»РёР·Р°С†РёСЏ РїРѕР»СЊР·РѕРІР°С‚РµР»СЊСЃРєРѕРіРѕ РёРЅС‚РµСЂС„РµР№СЃР°
 void UI_init(void){
 
 	Boolpin_init(&btnPrev,BTN_PREV_PORT,BTN_PREV_PIN,BTN_DEBOUNCE_MS,BTN_LONG_DELAY_MS,BTN_LONG_PERIOD_MS);
@@ -40,7 +40,7 @@ void UI_init(void){
 
 }
 
-//Обработчик пользователского интерфейса, обновление дисплея, кнопок
+//РћР±СЂР°Р±РѕС‚С‡РёРє РїРѕР»СЊР·РѕРІР°С‚РµР»СЃРєРѕРіРѕ РёРЅС‚РµСЂС„РµР№СЃР°, РѕР±РЅРѕРІР»РµРЅРёРµ РґРёСЃРїР»РµСЏ, РєРЅРѕРїРѕРє
 void UI_handler(void){
 	Canvas_clear(&canvas);
 

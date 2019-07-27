@@ -3,14 +3,14 @@
 
 int calculateChildsCount(MenuItem* menuItem){
 	int childsCount=0;
-	MenuItem* currentChild=(MenuItem*)menuItem->child;
+	MenuItem* currentChild=menuItem->child;
 
 	if(currentChild==&Null_Menu)
 		return 0;
 
 	while(true){
 		childsCount++;
-		currentChild=(MenuItem*)currentChild->next;
+		currentChild=currentChild->next;
 		if(currentChild==&Null_Menu)
 			break;
 	}
@@ -34,7 +34,7 @@ void MenuWindow_draw(MenuWindow* menuWindow){
 
 	int i=0;
 
-	MenuItem* currentChild=(MenuItem*)menuWindow->parentItem->child;
+	MenuItem* currentChild=menuWindow->parentItem->child;
 
 	for (int k=0; k<menuWindow->childsCount; k++ )
 	{
@@ -63,7 +63,7 @@ void MenuWindow_setMenuList(MenuWindow* menuWindow, MenuItem* parentItem){
 
 
 void MenuWindow_enter(MenuWindow* menuWindow){
-	MenuItem* currentChild=(MenuItem*)menuWindow->parentItem->child;
+	MenuItem* currentChild=menuWindow->parentItem->child;
 	for(int i=0;i<menuWindow->childsCount;i++)
 	{
 		if(i==menuWindow->select)
@@ -71,7 +71,7 @@ void MenuWindow_enter(MenuWindow* menuWindow){
 			MenuWindow_setMenuList(menuWindow,currentChild);
 			break;
 		}
-		currentChild=(MenuItem*)currentChild->next;
+		currentChild=currentChild->next;
 	}
 }
 

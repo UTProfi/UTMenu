@@ -2,3 +2,4 @@
 EWARM/
 Drivers/
 *.ioc
+\.vscode/

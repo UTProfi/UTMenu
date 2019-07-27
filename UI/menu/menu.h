@@ -1,9 +1,9 @@
 #ifndef __MENU_H
 #define __MENU_H
 
-typedef struct{
-	void* child;
-	void* next;
+typedef struct MenuItem{
+	MenuItem* child;
+	MenuItem* next;
 	char* text;
 }MenuItem;
 
