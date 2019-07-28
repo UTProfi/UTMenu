@@ -2191,6 +2191,6 @@
         </group>
     </group>
     <file>
-        <name>$PROJ_DIR$\main.c</name>
+        <name>$PROJ_DIR$\..\Tests\main.c</name>
     </file>
 </project>

@@ -2,8 +2,8 @@
 #define __MENU_H
 
 typedef struct MenuItem{
-	MenuItem* child;
-	MenuItem* next;
+	struct MenuItem* child;
+	struct MenuItem* next;
 	char* text;
 }MenuItem;
 
